@@ -11,6 +11,11 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png" 
   },
+  "content_scripts": [ {
+      "js": [ "/scripts/jquery-1.7.1.min.js" , "/scripts/contentscript.js" ],
+      "matches": [ "http://*.toolnavy.com/*" ],
+      "run_at": "document_end"
+   } ],
   "permissions" : [
     "tabs"
   ]
