@@ -1,6 +1,6 @@
 {
   "name": "Better Toolnavy",
-  "version": "0.1",
+  "version": "0.2",
   "description": "This extension makes Toolnavy much better.",
   "background_page": "background.html",
   "page_action": {
