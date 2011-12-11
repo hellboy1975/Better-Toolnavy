@@ -1,11 +1,8 @@
 {
   "name": "Better Toolnavy",
-  "version": "0.2",
+  "version": "0.4",
   "description": "This extension makes Toolnavy much better.",
   "background_page": "background.html",
-  "page_action": {
-    "default_icon": "images/icon19.png"
-  },
   "icons": { 
   	"16": "images/icon16.png",
     "48": "images/icon48.png",
@@ -15,8 +12,5 @@
       "js": [ "/scripts/jquery-1.7.1.min.js" , "/scripts/contentscript.js" ],
       "matches": [ "http://*.toolnavy.com/*" ],
       "run_at": "document_end"
-   } ],
-  "permissions" : [
-    "tabs"
-  ]
+   } ]
 }

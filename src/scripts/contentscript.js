@@ -1,6 +1,10 @@
 
+function removeUploadImageLink() {
+	$('#brotable3').html('');
+}
+
 function removeFuckingTriangle() {
-	$('img.inlineimg').hide();
+	$('img.inlineimg[alt="Go Back"]').hide();
 }
 
 // changes all of those pesky Toolshed references to a real website
@@ -19,6 +23,7 @@ function pageload()
 	if (location.href.indexOf('toolnavy.com') > -1) {
 		//chrome.pageAction.show(tabId);
 		removeFuckingTriangle();
+		removeUploadImageLink();
 		
 		addFourtheye();
 		
