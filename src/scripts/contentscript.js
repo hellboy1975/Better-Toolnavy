@@ -1,6 +1,7 @@
 
 function removeUploadImageLink() {
-	$('#brotable3').html('');
+	$("div#brotable3").hide();
+	
 }
 
 function removeFuckingTriangle() {
@@ -18,18 +19,28 @@ function restoreGays() {
 	$("#brotablebeta").html(rep);
 }
 
+
+//[TASTY] L1quid: id=f147
+//[TASTY] L1quid: try { document.getElementById("f147").style.display = "none"; } catch (e) {}
+
+function hidePolischtick() {
+	$("#f147").hide(); // Polischtick
+	$("#f100").hide(); // S & P
+	
+}
+
 function pageload()
 {
 	if (location.href.indexOf('toolnavy.com') > -1) {
 		//chrome.pageAction.show(tabId);
 		removeFuckingTriangle();
 		removeUploadImageLink();
+		hidePolischtick();
 		
 		addFourtheye();
 		
 		restoreGays();
 	}
-	//else chrome.pageAction.hide(tabId);  
 }
 
 pageload();
