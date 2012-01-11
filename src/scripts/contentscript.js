@@ -32,7 +32,6 @@ function hidePolischtick() {
 function pageload()
 {
 	if (location.href.indexOf('toolnavy.com') > -1) {
-		//chrome.pageAction.show(tabId);
 		removeFuckingTriangle();
 		removeUploadImageLink();
 		hidePolischtick();
