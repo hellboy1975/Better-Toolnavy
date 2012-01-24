@@ -4,9 +4,9 @@ function removeUploadImageLink() {
 	
 }
 
-function removeFuckingTriangle() {
-	$('img.inlineimg[alt="Go Back"]').hide();
-}
+//function removeFuckingTriangle() {
+//	$('img.inlineimg[alt="Go Back"]').hide();
+//}
 
 // changes all of those pesky Toolshed references to a real website
 function addFourtheye() {
@@ -32,7 +32,7 @@ function hidePolischtick() {
 function pageload()
 {
 	if (location.href.indexOf('toolnavy.com') > -1) {
-		removeFuckingTriangle();
+		//removeFuckingTriangle();
 		removeUploadImageLink();
 		hidePolischtick();
 		
